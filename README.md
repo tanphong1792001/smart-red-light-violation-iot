@@ -11,15 +11,9 @@ pip install -r requirement.txt
 ```
 
 
-## Backend
-```bash
-cd backend/.docker
-docker compose up
+## Run system
 ```
-## Frontend
-
-```bash 
-streamlit run main.py
+run file docker.bat
 ```
 
 
