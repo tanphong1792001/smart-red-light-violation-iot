@@ -1,0 +1,9 @@
+streamlit
+opencv-python
+scipy
+fastapi
+uvicorn
+tensorflow
+ultralytics
+easyocr
+python-multipart

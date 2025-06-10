@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .  # Directory containing the Dockerfile
+      dockerfile: Dockerfile  # Specify the Dockerfile to use for building the image
+    container_name: smart_traffic_yolo
+    volumes:
+      - ../:/workspace/
+    network_mode: "host"  # This shares the container's network with the host
+    ipc: host    
+    restart: unless-stopped
+    tty: true    
+    command: ["bash", "-c", "cd /workspace/ && uvicorn backend_launch:app"]
